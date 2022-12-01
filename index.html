@@ -37,7 +37,7 @@
 
                             <!-- BOUTONS-->
                             <div class="d-grid mb-5 text-center col-12">
-                                <button id="bouton_validation" onclick="creerQrCode()" type="" class="btn btn-primary text-uppercase">Valider</button>
+                                <button id="bouton_validation" onclick="creerQrCode()" type="submit" class="btn btn-primary text-uppercase">Valider</button>
                             </div>
                         </form>
 
@@ -51,7 +51,6 @@
 
         <script>
             let form = document.getElementById('formURL');
-            let log = document.getElementById('log');
 
             // Annulé la fonction de défaut de la soumission du form
             form.addEventListener('submit', (even) => {
@@ -125,7 +124,7 @@
                         a.click();
                         window.URL.revokeObjectURL(url);
                     })
-                    .catch(() => alert('Une erreur c\'est produit));
+                    .catch(() => alert('Une erreur c\'est produit'));
             }
 
         </script>
