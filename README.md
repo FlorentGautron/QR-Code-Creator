@@ -1,4 +1,4 @@
-# createur_qr_code
+# QR Code Creator
 
 Simpe QR creator :
 
